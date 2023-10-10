@@ -1,26 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>HTML Form Generator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form to HTML</title>
 </head>
 <body>
-    <h1>HTML Form Generator</h1>
-    <form id="formGenerator">
-    <div class="form-container">
-        <div class="form-groups">
-
+    <form>
+        <label for="form-title">Form Title</label>
+        <input type="text" id="form-title" name="form-title" placeholder="Enter Form Title">
         
-        <div class="form-group">
-        <label for="input">Container:</label>
-        <input type="text" class="input" name="tagname" placeholder="e.g., div">
+        <label for="first-name-label">First Name Label</label>
+        <input type="text" id="first-name-label" name="first-name-label" placeholder="First Name Label">
+        <label for="first-name-input">First Name Input</label>
+        <input type="text" id="first-name-input" name="first-name-input" placeholder="First Name Input">
+        
+        <label for="last-name-label">Last Name Label</label>
+        <input type="text" id="last-name-label" name="last-name-label" placeholder="Last Name Label">
+        <label for="last-name-input">Last Name Input</label>
+        <input type="text" id="last-name-input" name="last-name-input" placeholder="Last Name Input">
+        
+        <button type="submit">Generate HTML</button>
+    </form>
 
-        <label for="inputClass">Class:</label>
-        <input type="text" class="input" name="class" placeholder="if any">
+    <div id="output"></div>
 
-        </div>
-</div>
-</div>
-</form>
-<script src="script.js"></script>
-</body>
+    <script>
+        // Get the form element
+        const form = document.querySelector('form');
+
+        // Add an event listener to the form
+        form.addEventListener('submit', function(event) {
