@@ -1,0 +1,26 @@
+#formGenerator {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.form-groups {
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: space-between;
+    padding: 20px;
+}
+
+.form-group label {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
