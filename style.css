@@ -2,25 +2,35 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    
+}
+.form-container {
+    max-width: 80%;
+  
 }
 
 .form-groups {
     display: flex;
     flex-direction: column;
     flex: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .form-group {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: space-between;
-    padding: 20px;
-}
+    flex: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: space-around;
+    padding: 30px;
+  
+   
+  }
 
 .form-group label {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-bottom: 5px;
+   
 }
