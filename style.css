@@ -1,12 +1,17 @@
 #formGenerator {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    align-content: stretch;
+}
+
+h1 {
+    padding: 10px;
+    margin-left: 35px;
 }
 .form-container {
     max-width: 80%;
-  
+    margin: 0 auto;
 }
 
 .form-groups {
@@ -19,12 +24,12 @@
 
 .form-group {
     display: flex;
-    flex: wrap;
     gap: 1rem;
     justify-content: flex-start;
     align-items: space-around;
     padding: 30px;
-  
+    border: 2px solid #ccc;
+    margin: 10px;
    
   }
 
@@ -33,4 +38,9 @@
     font-weight: bold;
     margin-bottom: 5px;
    
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
 }
