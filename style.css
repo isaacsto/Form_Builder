@@ -44,6 +44,7 @@ p {
     align-items: center;
 }
 
+
 .cms {
     color: #FF7f30;
     text-decoration: none;
@@ -81,6 +82,9 @@ p {
     align-items: flex-end;
     
 }
+.copy:hover {
+    cursor: pointer;
+}
 
 
 /* footer */ 
@@ -93,6 +97,8 @@ p {
     width: 15%;
     margin-top: 45px;
 }
+
+
 .gh-icon-container {
     display: inline-block;
     position: relative;
