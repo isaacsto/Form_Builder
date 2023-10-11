@@ -95,7 +95,8 @@ p {
 .gh-icon-container {
     display: inline-block;
     position: relative;
-    margin-left: 40px;
+    margin-left: 20px;
+
 }
 
 
@@ -108,7 +109,7 @@ p {
     border-radius: 5px;
     position: absolute;
     z-index: 1;
-    width: 120px; /* Adjust the width as needed */
+    width: 90px; /* Adjust the width as needed */
     bottom: 100%; /* Position the bubble above the icon */
     left: 50%;
     transform: translateX(-50%); /* Center the bubble horizontally */
