@@ -36,10 +36,13 @@
             output.value = html;
 
             // copy button
-            const copyButton = document.querySelector('#copy-button');
+            const copyButton = document.querySelector('#copy');
            
             copyButton.addEventListener('click', function() {
-                navigator.clipboard.writeText(html);
+                navigator.clipboard.writeText(html)
+                .then(() => {
+                    alert('Copied to clipboard!');
+                });
             });
            
         });

@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1498603cf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Form to HTML</title>
 </head>
 
 <body>
-    <div class="banner"> 
-        
-        <img class="treehouse-logo" src="https://cdn.treehouseinternetgroup.com/cms_images/687/th-marketing-logo-2021.svg" alt="Treehouse Marketing">
-   <a href="https://www.contractornation.com/app/?module=cms">
-        <img class="cn-logo" src="https://cdn.treehouseinternetgroup.com/cms_images/872/cn-house-icon.svg">
-    </a>
+    <div class="banner">
+
+        <img class="treehouse-logo"
+            src="https://cdn.treehouseinternetgroup.com/cms_images/687/th-marketing-logo-2021.svg"
+            alt="Treehouse Marketing">
+        <a href="https://www.contractornation.com/app/?module=cms">
+            <img class="cn-logo" src="https://cdn.treehouseinternetgroup.com/cms_images/872/cn-house-icon.svg">
+        </a>
     </div>
     <p>Form Builder</p>
     <form id="form">
@@ -66,7 +69,7 @@
                 </div>
 
                 <div class="col-sm">
-                    <label for="label" class="standard" >Label: </label>
+                    <label for="label" class="standard">Label: </label>
                     <input type="text" id="third-label" name="third-label" placeholder="e.g. location">
                 </div>
 
@@ -90,22 +93,29 @@
 
                 <div class="col-sm">
                     <label for="label" class="type">Type: </label>
-                    <input type="text" id="third-class" name="third-class" placeholder="e.g. submit">
+                    <input type="text" id="button-type" name="button-type" placeholder="e.g. submit">
                 </div>
 
             </div>
         </div>
-    <div class="buttons">
-        <button type="button" class="btn btn-custom">Generate HTML</button>
-        <button type="button" class="btn btn-custom">Copy HTML</button>
-    </div>
+
+        <div class="generate">
+            <button type="submit" class="btn btn-custom">Generate HTML</button>
+        </div>
 
 
     </form>
-<div class="output-container">
-    <textarea id="output-textarea" rows="10" cols="50"></textarea>
-</div>
-   
+    <div class="output-container">
+      
+        <textarea class="output-textarea" id="output-textarea" rows="10" cols="50">
+        </textarea>
+       
+    </div>
+
+    <div class="copy" id="copy">
+        <i class="fa-solid fa-copy" style="color: #4a403e;"></i>
+    </div>
+
 
     <script src="script.js"></script>
 

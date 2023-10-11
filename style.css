@@ -20,16 +20,25 @@ p {
     justify-content: center;
     padding: 50px;
 }
-.buttons button {
-   border: 1px solid;
-   border-color: #48403e; 
-   padding: 5px;
-   margin: 5px;
+.generate {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
 }
 
 .output-container {
     display: flex; 
     justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+.copy {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+    
 }
 
 .treehouse-logo {
