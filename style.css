@@ -35,7 +35,7 @@ p {
 /* banner */ 
 
 .treehouse-logo {
-    height: 12vh;
+    height: 6.5vh;
     padding: 10px;
     margin-left: 20px;
     display: flex; 
@@ -54,16 +54,20 @@ p {
     display: flex;
     margin: 15px;
     align-items: center;
+    height: 3vh;
 }
 
 
+
 .cms {
-    color: #FF7f30;
+    color: #48403e;
+    font-family: 'Pixelify Sans', sans-serif;
     text-decoration: none;
     font-weight: bolder;
+    
 } 
 .cms:hover {
-    color: #FF7f30;
+    color: #219857;
     text-decoration: none;
 }
 
@@ -97,6 +101,7 @@ p {
 }
 .copy:hover {
     cursor: pointer;
+    color: #219857;
 }
 
 
