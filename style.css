@@ -72,6 +72,11 @@ p {
     margin-top: 45px;
 }
 
+.gh-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
 
 * {
     font-family: 'Ubuntu', sans-serif;
