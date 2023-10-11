@@ -47,6 +47,7 @@ p {
 .cms {
     color: #FF7f30;
     text-decoration: none;
+    font-weight: bolder;
 } 
 .cms:hover {
     color: #FF7f30;
