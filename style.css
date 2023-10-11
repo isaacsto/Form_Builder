@@ -3,19 +3,31 @@
     color: #48403e;
 }
 
+.wrapper {
+    background-image: url('assets/markus-spiske-iar-afB0QQw-unsplash.jpg');
+    display: flex;
+    align-items: space-around;
+}
+
 .standard {
     margin-right: 10px;
+    color: #f1f7ee;
+ 
+}
+.label {
+    color: #f1f7ee;
 }
 
 .type {
     margin-right: 2px;
+    color: #f1f7ee;
 }
 
 p {
     display: flex; 
     justify-content: center;
-    padding: 30px;
-    color: #48403e;
+    padding: 20px;
+    color: #f1f7ee;
     font-weight: bolder;
     font-size: 40px;
 }
@@ -24,7 +36,7 @@ p {
 
 .treehouse-logo {
     height: 12vh;
-    padding: 20px;
+    padding: 10px;
     margin-left: 20px;
     display: flex; 
 }
@@ -69,7 +81,7 @@ p {
     display: flex; 
     justify-content: center;
     align-items: center;
-    padding: 20px; 
+    padding: 5px; 
 }
 
 .output-textarea {
@@ -80,6 +92,7 @@ p {
     display: flex; 
     justify-content: center;
     align-items: flex-end;
+    padding: 5px; 
     
 }
 .copy:hover {
@@ -89,47 +102,26 @@ p {
 
 /* footer */ 
 
-.cell-auto {
+.wrapper {
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-}
-#footer-logo {
-    width: 15%;
-    margin-top: 45px;
+    flex-direction: column;
 }
 
 
-.gh-icon-container {
-    display: inline-block;
-    position: relative;
-    margin-left: 20px;
-
+footer {
+    margin-top: auto;
+    background-color: #f1f7ee;
+   
 }
 
-
-.gh-icon .hover-content {
-    visibility: hidden;
-    background-color: #f1f7ee; /* Background color of the bubble */
-    color: #333; /* Text color */
-    border: 1px solid #ccc; /* Border color */
-    padding: 5px;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 1;
-    width: 90px; /* Adjust the width as needed */
-    bottom: 100%; /* Position the bubble above the icon */
-    left: 50%;
-    transform: translateX(-50%); /* Center the bubble horizontally */
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-    text-align: center;
+.gh-icon {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px ;
+    background-color: #f1f7ee;
 }
 
-.gh-icon:hover .hover-content {
-    visibility: visible;
-    opacity: 1;
-    text-align: center;
-}
 
 
 
@@ -149,9 +141,7 @@ p {
     #fill {
         display: none;
     }
-    .copy {
-        margin-bottom: 10px;
-    }
+  
     .gh-icon-container {
         display: flex; 
         justify-content: center;
