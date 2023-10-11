@@ -144,6 +144,11 @@ p {
     .copy {
         margin-bottom: 10px;
     }
+    .gh-icon-container {
+        display: flex; 
+        justify-content: center;
+        margin: 20px; 
+    }
 }
 
 @media screen and (max-width: 300px) {
