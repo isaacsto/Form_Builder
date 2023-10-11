@@ -66,3 +66,38 @@ p {
     font-family: 'Ubuntu', sans-serif;
     color: #48403e;
 }
+
+@media screen and (max-width: 1200px) {
+    .col-sm {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: wrap;
+    }
+ 
+    .banner {
+        width: 100%;
+    }
+    #fill {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .banner {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        width: 100%
+    }
+    .col-sm {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
