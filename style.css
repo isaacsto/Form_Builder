@@ -1,3 +1,8 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    color: #48403e;
+}
+
 .standard {
     margin-right: 10px;
 }
@@ -14,6 +19,40 @@ p {
     font-weight: bolder;
     font-size: 40px;
 }
+
+/* banner */ 
+
+.treehouse-logo {
+    height: 12vh;
+    padding: 20px;
+    margin-left: 20px;
+    display: flex; 
+}
+
+
+.banner {
+    width: 100%;
+    background-color: #f1f7ee;
+    display: flex; 
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cn-icon-container {
+    display: flex;
+    margin: 10px;
+}
+
+.cms {
+    color: #FF7f30;
+    text-decoration: none;
+} 
+.cms:hover {
+    color: #FF7f30;
+    text-decoration: none;
+}
+
+/* buttons/textarea */ 
 
 .generate {
     display: flex;
@@ -41,27 +80,8 @@ p {
     
 }
 
-.treehouse-logo {
-    height: 12vh;
-    padding: 20px;
-    margin-left: 20px;
-    display: flex; 
-}
 
-.cn-logo {
-    height: 9vh;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-end;
-    float: right; 
-}
-.banner {
-    width: 100%;
-    background-color: #f1f7ee;
-    display: flex; 
-    justify-content: space-between;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
+/* footer */ 
 
 .cell-auto {
     display: flex;
@@ -71,17 +91,39 @@ p {
     width: 15%;
     margin-top: 45px;
 }
-
-.gh-icon {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
+.gh-icon-container {
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
 }
 
-* {
-    font-family: 'Ubuntu', sans-serif;
-    color: #48403e;
+
+.gh-icon .hover-content {
+    visibility: hidden;
+    background-color: #f1f7ee; /* Background color of the bubble */
+    color: #333; /* Text color */
+    border: 1px solid #ccc; /* Border color */
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    width: 120px; /* Adjust the width as needed */
+    bottom: 100%; /* Position the bubble above the icon */
+    left: 50%;
+    transform: translateX(-50%); /* Center the bubble horizontally */
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    text-align: center;
 }
+
+.gh-icon:hover .hover-content {
+    visibility: visible;
+    opacity: 1;
+    text-align: center;
+}
+
+
+
 
 @media screen and (max-width: 1200px) {
     .col-sm {
