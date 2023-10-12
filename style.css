@@ -4,12 +4,11 @@
 }
 
 .wrapper {
-    background-color:
+    background-color: #f1f7ee;
 }
 
 .standard {
     margin-right: 10px;
-   
  
 }
 
@@ -76,6 +75,12 @@ p {
     margin: 5px;
   
 }
+
+.btn btn-custom {
+    border: #48403e solid 1px;
+ 
+}
+
 .output-container {
     display: flex; 
     justify-content: center;
