@@ -86,9 +86,10 @@ p {
     justify-content: center;
     align-items: center;
     padding: 5px; 
+ 
 }
 
-.output-textarea {
+#output-textarea {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
