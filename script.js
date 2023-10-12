@@ -16,14 +16,11 @@
             const firstLabel = document.querySelector('#label-one').value;
             const firstName = document.querySelector('#name-one').value;
             const firstId = document.querySelector('#id-one').value;
-
           
             const secondClass = document.querySelector('#class-two').value;
             const secondLabel = document.querySelector('#label-two').value;
             const secondName = document.querySelector('#name-two').value;
             const secondId = document.querySelector('#id-two').value;
-
-
 
             const thirdLabel = document.querySelector('#label-three').value;
             const thirdClass = document.querySelector('#class-three').value;
@@ -40,7 +37,6 @@
             const fifthName = document.querySelector('#name-five').value;
             const fifthId = document.querySelector('#id-five').value;
 
-
             const buttonLabel = document.querySelector('#button-label').value;
             const buttonType = document.querySelector('#button-type').value;
             const buttonClass = document.querySelector('#button-class').value;
@@ -51,22 +47,22 @@
                 <form class="${formClass}" id="${formId}"action="${formAction}">
                     <h2>${formTitle}</h2>
 
-                    <label class="${firstClass}" name="${firstName}" id="${firstId}>${firstLabel}</label>
+                    <label class="${firstClass}" name="${firstName}" id="${firstId}">${firstLabel}</label>
                     <input type="text" id="generated-input">
                     
-                    <label class="${secondClass}" name="${secondName}" id="${secondId}>${secondLabel}</label>
+                    <label class="${secondClass}" name="${secondName}" id="${secondId}">${secondLabel}</label>
                     <input type="text" id="generated-input">
                     
-                    <label class="${thirdClass}" name="${thirdName}" id="${thirdId}>${thirdLabel}</label>
+                    <label class="${thirdClass}" name="${thirdName}" id="${thirdId}">${thirdLabel}</label>
                     <input type="text" id="generated-input">
 
-                    <label class="${fourthClass}" name="${fourthName}" id="${fourthId}>${fourthLabel}</label>
+                    <label class="${fourthClass}" name="${fourthName}" id="${fourthId}">${fourthLabel}</label>
                     <input type="text" id="generated-input">
                     
-                    <label class="${fifthClass}" name="${fifthName}" id="${fifthId}>${fifthLabel}</label>
+                    <label class="${fifthClass}" name="${fifthName}" id="${fifthId}">${fifthLabel}</label>
                     <input type="text" id="generated-input">
                    
-                    <button type="${buttonType}" class="${buttonClass}"id="${buttonId}">${buttonLabel}</button>
+                    <button type="${buttonType}" class="${buttonClass}"id="${buttonId}"">${buttonLabel}</button>
                 </form>
             `;
 
