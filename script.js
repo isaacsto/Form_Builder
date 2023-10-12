@@ -12,8 +12,10 @@
             const formClass = document.querySelector('#form-class').value;
             const formId = document.querySelector('#form-id').value;
 
-            const firstClass = document.querySelector('#first-class').value;
-            const firstLabel = document.querySelector('#first-label').value;
+            const firstClass = document.querySelector('#class-one').value;
+            const firstLabel = document.querySelector('#label-one').value;
+            const firstName = document.querySelector('#name-one').value;
+            const firstId = document.querySelector('#id-one').value;
 
             const secondLabel = document.querySelector('#second-label').value;
             const secondClass = document.querySelector('#second-class').value;
@@ -32,8 +34,9 @@
                     <label class="${firstClass}">${firstLabel}</label>
                     <input type="text" id="generated-input">
                    
-                    <label class="${secondClass}">${secondLabel}</label>
+                    <label class="${secondClass}" name="${firstName} id="${firstId}">${secondLabel}</label>
                     <input type="text" id="generated-input">
+
                     <label class="${thirdClass}">${thirdLabel}</label>
                     <input type="text" id="generated-input">
                     <button type="${buttonType}">${buttonLabel}</button>
