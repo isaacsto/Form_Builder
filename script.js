@@ -17,8 +17,14 @@
             const firstName = document.querySelector('#name-one').value;
             const firstId = document.querySelector('#id-one').value;
 
-            const secondLabel = document.querySelector('#second-label').value;
-            const secondClass = document.querySelector('#second-class').value;
+          
+            const secondClass = document.querySelector('#class-two').value;
+            const secondLabel = document.querySelector('#label-two').value;
+            const secondName = document.querySelector('#name-two').value;
+            const secondId = document.querySelector('#id-two').value;
+
+
+
             const thirdLabel = document.querySelector('#third-label').value;
             const thirdClass = document.querySelector('#third-class').value;
 
@@ -31,14 +37,12 @@
                 <form class="${formClass}" id="${formId}"action="${firstAction}">
                     <h2>${formTitle}</h2>
 
-                    <label class="${firstClass}">${firstLabel}</label>
+                    <label class="${firstClass}" name="${firstName}" id="${firstId}>${firstLabel}</label>
+                    <input type="text" id="generated-input">
+                    
+                    <label class="${secondClass}" name="${secondName}" id="${secondId}>${secondLabel}</label>
                     <input type="text" id="generated-input">
                    
-                    <label class="${secondClass}" name="${firstName} id="${firstId}">${secondLabel}</label>
-                    <input type="text" id="generated-input">
-
-                    <label class="${thirdClass}">${thirdLabel}</label>
-                    <input type="text" id="generated-input">
                     <button type="${buttonType}">${buttonLabel}</button>
                 </form>
             `;
