@@ -25,12 +25,26 @@
 
 
 
-            const thirdLabel = document.querySelector('#third-label').value;
-            const thirdClass = document.querySelector('#third-class').value;
+            const thirdLabel = document.querySelector('#label-three').value;
+            const thirdClass = document.querySelector('#class-three').value;
+            const thirdName = document.querySelector('#name-three').value;
+            const thirdId = document.querySelector('#id-three').value;
+
+            const fourthLabel = document.querySelector('#label-four').value;
+            const fourthClass = document.querySelector('#class-four').value;
+            const fourthName = document.querySelector('#name-four').value;
+            const fourthId = document.querySelector('#id-four').value;
+
+            const fifthLabel = document.querySelector('#label-five').value;
+            const fifthClass = document.querySelector('#class-five').value;
+            const fifthName = document.querySelector('#name-five').value;
+            const fifthId = document.querySelector('#id-five').value;
 
 
             const buttonLabel = document.querySelector('#button-label').value;
             const buttonType = document.querySelector('#button-type').value;
+            const buttonClass = document.querySelector('#button-class').value;
+            const buttonId = document.querySelector('#button-id').value;
 
             // Construct HTML string
             const html = `
@@ -42,8 +56,17 @@
                     
                     <label class="${secondClass}" name="${secondName}" id="${secondId}>${secondLabel}</label>
                     <input type="text" id="generated-input">
+                    
+                    <label class="${thirdClass}" name="${thirdName}" id="${thirdId}>${thirdLabel}</label>
+                    <input type="text" id="generated-input">
+
+                    <label class="${fourthClass}" name="${fourthName}" id="${fourthId}>${fourthLabel}</label>
+                    <input type="text" id="generated-input">
+                    
+                    <label class="${fifthClass}" name="${fifthName}" id="${fifthId}>${fifthLabel}</label>
+                    <input type="text" id="generated-input">
                    
-                    <button type="${buttonType}">${buttonLabel}</button>
+                    <button type="${buttonType}" class="${buttonClass}"id="${buttonId}">${buttonLabel}</button>
                 </form>
             `;
 
