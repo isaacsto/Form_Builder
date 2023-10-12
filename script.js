@@ -8,21 +8,30 @@
 
             // Get values of input fields
             const formTitle = document.querySelector('#form-title').value;
-            const firstLabel = document.querySelector('#first-label').value;
+            const firstAction = document.querySelector('#first-action').value;
+            const formClass = document.querySelector('#form-class').value;
+            const formId = document.querySelector('#form-id').value;
+
             const firstClass = document.querySelector('#first-class').value;
+            const firstLabel = document.querySelector('#first-label').value;
+
             const secondLabel = document.querySelector('#second-label').value;
             const secondClass = document.querySelector('#second-class').value;
             const thirdLabel = document.querySelector('#third-label').value;
             const thirdClass = document.querySelector('#third-class').value;
+
+
             const buttonLabel = document.querySelector('#button-label').value;
             const buttonType = document.querySelector('#button-type').value;
 
             // Construct HTML string
             const html = `
-                <form>
+                <form class="${formClass}" id="${formId}"action="${firstAction}">
                     <h2>${formTitle}</h2>
+
                     <label class="${firstClass}">${firstLabel}</label>
                     <input type="text" id="generated-input">
+                   
                     <label class="${secondClass}">${secondLabel}</label>
                     <input type="text" id="generated-input">
                     <label class="${thirdClass}">${thirdLabel}</label>
