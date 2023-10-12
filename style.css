@@ -104,6 +104,9 @@ p {
     cursor: pointer;
 }
 
+.label {
+    display:block;
+}
 /* footer */ 
 
 .wrapper {
