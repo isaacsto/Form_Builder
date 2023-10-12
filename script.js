@@ -8,7 +8,7 @@
 
             // Get values of input fields
             const formTitle = document.querySelector('#form-title').value;
-            const firstAction = document.querySelector('#first-action').value;
+            const formAction = document.querySelector('#form-action').value;
             const formClass = document.querySelector('#form-class').value;
             const formId = document.querySelector('#form-id').value;
 
@@ -48,7 +48,7 @@
 
             // Construct HTML string
             const html = `
-                <form class="${formClass}" id="${formId}"action="${firstAction}">
+                <form class="${formClass}" id="${formId}"action="${formAction}">
                     <h2>${formTitle}</h2>
 
                     <label class="${firstClass}" name="${firstName}" id="${firstId}>${firstLabel}</label>
