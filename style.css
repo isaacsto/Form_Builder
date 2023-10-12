@@ -96,11 +96,13 @@ p {
     display: flex; 
     justify-content: center;
     align-items: flex-end;
-    padding: 5px; 
+    padding: 10px; 
     
 }
 
-
+.copy:hover {
+    cursor: pointer;
+}
 
 /* footer */ 
 
