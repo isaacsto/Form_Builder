@@ -4,28 +4,26 @@
 }
 
 .wrapper {
-    background-color:#48403e
+    background-color:
 }
 
 .standard {
     margin-right: 10px;
-    color: #f1f7ee;
+   
  
 }
-.label {
-    color: #f1f7ee;
-}
+
 
 .type {
     margin-right: 2px;
-    color: #f1f7ee;
+
 }
 
 p {
     display: flex; 
     justify-content: center;
     padding: 20px;
-    color: #f1f7ee;
+    color: #48403e;
     font-weight: bolder;
     font-size: 40px;
 }
@@ -45,7 +43,7 @@ p {
     background-color: #f1f7ee;
     display: flex; 
     justify-content: space-between;
-    box-shadow: 0px 2px 4px rgba(230, 210, 210, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .cn-icon-container {
@@ -96,10 +94,7 @@ p {
     padding: 5px; 
     
 }
-.copy:hover {
-    cursor: pointer;
-    color: #219857;
-}
+
 
 
 /* footer */ 
@@ -114,6 +109,8 @@ p {
 footer {
     margin-top: auto;
     background-color: #f1f7ee;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
    
 }
 
