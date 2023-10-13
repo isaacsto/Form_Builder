@@ -68,9 +68,10 @@
 
             const more = document.querySelector('#more');
 
-            form.addEventListener('click', function(event) {
+            more.addEventListener('click', function(event) {
 
                 event.preventDefault();
+                var row = document.querySelector('#new-row');
                 
             });
             // Display in textarea
