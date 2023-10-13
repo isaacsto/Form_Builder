@@ -66,6 +66,13 @@
                 </form>
             `;
 
+            const more = document.querySelector('#more');
+
+            form.addEventListener('click', function(event) {
+
+                event.preventDefault();
+                
+            });
             // Display in textarea
             const output = document.querySelector('#output-textarea');
             output.value = html;
