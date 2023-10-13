@@ -1,8 +1,39 @@
+const more = document.querySelector('#more');
+
+more.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
+    const newRow = `     <div class="row">
+    <div class="col">
+        <label for="label" class="label">Label: </label>
+        <input type="text" id="label-five" name="label-five" placeholder="optional">
+    </div>
+    <div class="col">
+        <label class="label" for="label">Class: </label>
+        <input type="text" id="class-five" name="class-five" placeholder="if any">
+    </div>
+
+    <div class="col">
+        <label class="label" for="label">Name: </label>
+        <input type="text" id="name-five" name="name-five" placeholder="if any">
+    </div>
+    <div class="col">
+        <label class="label" for="label">Id: </label>
+        <input type="text" id="id-five" name="id-five" placeholder="if any">
+    </div>
+</div> `;
+const rowElement = document.querySelector('#new-row');
+
+rowElement.insertAdjacentHTML('beforeend', newRow);
+
+    
+});    
         // Get form element
-        const form = document.querySelector('#form');
+        form = document.querySelector('#gen');
 
         // Add event listener to form
-        form.addEventListener('submit', function(event) {
+        form.addEventListener('click', function(event) {
             // Prevent the default form submission behavior
             event.preventDefault();
 
@@ -32,11 +63,6 @@
             const fourthName = document.querySelector('#name-four').value;
             const fourthId = document.querySelector('#id-four').value;
 
-            const fifthLabel = document.querySelector('#label-five').value;
-            const fifthClass = document.querySelector('#class-five').value;
-            const fifthName = document.querySelector('#name-five').value;
-            const fifthId = document.querySelector('#id-five').value;
-
             const buttonLabel = document.querySelector('#button-label').value;
             const buttonType = document.querySelector('#button-type').value;
             const buttonClass = document.querySelector('#button-class').value;
@@ -58,22 +84,11 @@
 
                     <label class="${fourthClass}" name="${fourthName}" id="${fourthId}">${fourthLabel}</label>
                     <input type="text" id="generated-input">
-                    
-                    <label class="${fifthClass}" name="${fifthName}" id="${fifthId}">${fifthLabel}</label>
-                    <input type="text" id="generated-input">
                    
                     <button type="${buttonType}" class="${buttonClass}"id="${buttonId}"">${buttonLabel}</button>
                 </form>
             `;
 
-            const more = document.querySelector('#more');
-
-            more.addEventListener('click', function(event) {
-
-                event.preventDefault();
-                var row = document.querySelector('#new-row');
-                
-            });
             // Display in textarea
             const output = document.querySelector('#output-textarea');
             output.value = html;

@@ -76,10 +76,14 @@ p {
   
 }
 
-.btn btn-custom {
-    border: #48403e solid 1px;
- 
+.more-btn{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+  
 }
+
 
 .output-container {
     display: flex; 
