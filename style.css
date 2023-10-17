@@ -143,10 +143,15 @@ footer {
 }
 
 
-
+.new-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
 
 @media screen and (max-width: 1200px) {
-    .col-sm {
+    .col-sn {
         display: flex; 
         flex-direction: column;
         justify-content: flex-start;

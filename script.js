@@ -1,10 +1,10 @@
-const more = document.querySelector('#more');
+/* const more = document.querySelector('#more');
 
 more.addEventListener('click', function(event) {
 
     event.preventDefault();
 
-    const newRow = `     <div class="row">
+    const newRow = `     <div class="new-row">
     <div class="col">
         <label for="label" class="label">Label: </label>
         <input type="text" id="label-five" name="label-five" placeholder="optional">
@@ -28,7 +28,7 @@ const rowElement = document.querySelector('#new-row');
 rowElement.insertAdjacentHTML('beforeend', newRow);
 
     
-});    
+});    */
         // Get form element
         form = document.querySelector('#gen');
 
