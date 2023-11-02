@@ -73,7 +73,10 @@ p {
     justify-content: center;
     padding: 5px;
     margin: 5px;
-  
+}
+
+.generate button:hover {
+    background-color: #589240;
 }
 
 .more-btn{
@@ -142,12 +145,20 @@ footer {
     color: #589240;; 
 }
 
+.row {
+    margin-bottom: 50px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px 20px 35px 20px; 
+}
 
 .new-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  
+}
+
+.fa-solid {
+    padding: 15px; 
 }
 
 @media screen and (max-width: 1200px) {
