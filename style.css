@@ -152,7 +152,9 @@ footer {
     
 }
 
-
+.label {
+    width: 100px; 
+}
 
 
 .fa-solid {
