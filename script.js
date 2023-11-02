@@ -83,17 +83,17 @@ rowElement.insertAdjacentHTML('beforeend', newRow);
                 <form class="${formClass}" id="${formId}"action="${formAction}">
                     <h2>${formTitle}</h2>
 
-                    <label class="${firstClass}" name="${firstName}" id="${firstId}">${firstLabel}</label>
-                    <input type="${firstType}" id="${inputIdOne}">
+                    <label class="${firstClass}" name="${firstName}" id="${firstId}">${firstLabel}
+                    <input type="${firstType}" id="${inputIdOne}"></label>
                     
-                    <label class="${secondClass}" name="${secondName}" id="${secondId}">${secondLabel}</label>
-                    <input type="${secondType}" id="${inputIdTwo}">
+                    <label class="${secondClass}" name="${secondName}" id="${secondId}">${secondLabel}
+                    <input type="${secondType}" id="${inputIdTwo}"></label>
                     
-                    <label class="${thirdClass}" name="${thirdName}" id="${thirdId}">${thirdLabel}</label>
-                    <input type="${thirdType}" id="${inputIdThree}">
+                    <label class="${thirdClass}" name="${thirdName}" id="${thirdId}">${thirdLabel}
+                    <input type="${thirdType}" id="${inputIdThree}"></label>
 
-                    <label class="${fourthClass}" name="${fourthName}" id="${fourthId}">${fourthLabel}</label>
-                    <input type="${fourthType}" id="${inputIdFour}">
+                    <label class="${fourthClass}" name="${fourthName}" id="${fourthId}">${fourthLabel}
+                    <input type="${fourthType}" id="${inputIdFour}"></label>
                    
                     <button type="${buttonType}" class="${buttonClass}"id="${buttonId}" action="${buttonAction}">${buttonLabel}</button>
                 </form>
