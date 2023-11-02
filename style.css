@@ -153,12 +153,6 @@ footer {
 }
 
 
-.new-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .fa-solid {
     padding: 15px; 
 }
