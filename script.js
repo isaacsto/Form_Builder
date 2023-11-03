@@ -29,6 +29,7 @@ rowElement.insertAdjacentHTML('beforeend', newRow);
 
     
 });    */
+document.addEventListener('DOMContentLoaded', function() {
         // Get form element
         form = document.querySelector('#gen');
 
@@ -78,27 +79,53 @@ rowElement.insertAdjacentHTML('beforeend', newRow);
             const buttonId = document.querySelector('#button-id').value;
         
 
+            //required 
+
+            let reqCheck1 = '';
+                const checkbox1 = document.querySelector(`#checkbox1`);
+                if(checkbox1.checked){
+                    reqCheck1 = 'required';
+                }
+                let reqCheck2 = '';
+                const checkbox2 = document.querySelector(`#checkbox2`);
+                if(checkbox2.checked){
+                    reqCheck2 = 'required';
+                }
+                let reqCheck3 = ''; 
+                const checkbox3 = document.querySelector(`#checkbox3`);
+                if(checkbox3.checked){
+                    reqCheck3 = 'required';
+                }
+                let reqCheck4 = '';
+                const checkbox4 = document.querySelector(`#checkbox4`);
+                if(checkbox4.checked){
+                    reqCheck4 = 'required';
+                }
+        
             // Construct HTML string
             const html = `
                 <form class="${formClass}" id="${formId}"action="${formAction}">
                     <h2>${formTitle}</h2>
 
                     <label class="${firstClass}" name="${firstName}" id="${firstId}">${firstLabel}
-                    <input type="${firstType}" id="${inputIdOne}"></label>
+                    <input type="${firstType}" id="${inputIdOne}"  ${reqCheck1}></label>
                     
                     <label class="${secondClass}" name="${secondName}" id="${secondId}">${secondLabel}
-                    <input type="${secondType}" id="${inputIdTwo}"></label>
+                    <input type="${secondType}" id="${inputIdTwo}"  ${reqCheck2}></label>
                     
                     <label class="${thirdClass}" name="${thirdName}" id="${thirdId}">${thirdLabel}
-                    <input type="${thirdType}" id="${inputIdThree}"></label>
+                    <input type="${thirdType}" id="${inputIdThree}"  ${reqCheck3}></label>
 
                     <label class="${fourthClass}" name="${fourthName}" id="${fourthId}">${fourthLabel}
-                    <input type="${fourthType}" id="${inputIdFour}"></label>
+                    <input type="${fourthType}" id="${inputIdFour}"  ${reqCheck4}></label>
                    
                     <button type="${buttonType}" class="${buttonClass}"id="${buttonId}" action="${buttonAction}">${buttonLabel}</button>
                 </form>
             `;
 
+    
+
+      
             // Display in textarea
             const output = document.querySelector('#output-textarea');
             output.value = html;
@@ -115,4 +142,4 @@ rowElement.insertAdjacentHTML('beforeend', newRow);
            
         });
 
-     
+    });
