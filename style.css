@@ -98,7 +98,7 @@ p {
 input {
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(72, 64, 62, 0.5);
+    
 }
 
 .output-container {
