@@ -75,9 +75,16 @@ p {
     margin: 5px;
 }
 
+.generate button {
+    
+    box-shadow: 2px 2px 5px rgba(72, 64, 62, 0.5);
+    margin-bottom: 10px; 
+}
+
 .generate button:hover {
     background-color: #589240;
     color: #ffff;
+
 }
 
 .more-btn{
