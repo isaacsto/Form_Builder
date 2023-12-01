@@ -1,8 +1,13 @@
-* {
+input,
+label {
     font-family: 'Ubuntu', sans-serif;
     color: #48403e;
 }
 
+p {
+    font-family: 'Signika Negative', sans-serif;
+    color: #48403e;
+}
 .wrapper {
     background-color: #f1f7ee;
 }
