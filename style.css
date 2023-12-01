@@ -8,6 +8,10 @@ p {
     font-family: 'Signika Negative', sans-serif;
     color: #48403e;
 }
+p:hover {
+    color: #589240;
+    cursor: pointer;
+}
 .wrapper {
     background-color: #f1f7ee;
 }
