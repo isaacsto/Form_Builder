@@ -126,7 +126,14 @@ input {
     padding: 10px; 
     
 }
+.copy i {
+    color: #48403e;
+    transition: color 0.3s; 
+}
 
+.copy:hover i {
+    color: #589240;
+}
 .copy:hover {
     cursor: pointer;
 }
