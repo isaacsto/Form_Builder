@@ -201,7 +201,7 @@ footer {
 
 
 @media screen and (max-width: 1200px) {
-    .col-sn {
+    .wrap-sn {
         display: flex; 
         flex-direction: column;
         justify-content: flex-start;
@@ -223,6 +223,14 @@ footer {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .row.one {
+        display: flex; 
+        flex-direction: column;
+    }
+
+}
+
 @media screen and (max-width: 300px) {
     .banner {
         width: 100%
@@ -233,7 +241,7 @@ footer {
     .banner {
         width: 100%
     }
-    .col-sm {
+    .wrap-sm {
         display: flex; 
         flex-direction: column;
         justify-content: center;
